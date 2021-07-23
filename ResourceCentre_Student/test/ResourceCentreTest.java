@@ -176,6 +176,7 @@ public class ResourceCentreTest {
 		ResourceCentre.doLoanChromebook(chromebookList,"CB0011", "7-7-2021");
 		boolean test2 = ResourceCentre.doReturnChromebook(chromebookList,"CB0011");
 		assertTrue("Test newly added chromebook can be loaned", test2);
+		//TestComment
 	}
 	
 	@After
