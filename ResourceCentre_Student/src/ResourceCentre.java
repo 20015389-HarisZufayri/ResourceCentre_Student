@@ -123,6 +123,9 @@ public class ResourceCentre {
 	}
 
 	//================================= Option 1 View items (CRUD- Read) =================================
+	
+	// Assigned to: Tristen
+	
 	public static String retrieveAllCamcorder(ArrayList<Camcorder> camcorderList) {
 		String output = "";
 
@@ -164,6 +167,9 @@ public class ResourceCentre {
 	}
 
 	//================================= Option 2 Add an item (CRUD - Create) =================================
+	
+	// Assigned to: Yolanda
+	
 	public static Camcorder inputCamcorder() {
 		String tag = Helper.readString("Enter asset tag > ");
 		String description = Helper.readString("Enter description > ");
@@ -197,6 +203,9 @@ public class ResourceCentre {
 	}
 	
 	//================================= Option 3 Loan an item (CRUD - Update) =================================
+	
+	// Assigned to: Haris
+	
 	public static boolean doLoanCamcorder(ArrayList<Camcorder> camcorderList, String tag, String dueDate) {
 		
 		boolean isLoaned = false;
@@ -258,6 +267,9 @@ public class ResourceCentre {
 	}
 	
 	//================================= Option 4 Return an item (CRUD - Update)=================================
+	
+	// Assigned to: Rui Xiang
+	
 	public static boolean doReturnCamcorder(ArrayList<Camcorder> camcorderList,String tag) {
 		boolean isReturned = false;
 

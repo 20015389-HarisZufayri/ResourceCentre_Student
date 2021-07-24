@@ -33,7 +33,7 @@ public class ResourceCentreTest {
 
 	
 	@Test
-	public void testAddCamcorder() {
+	public void testAddCamcorder() { // Assigned to: Yolanda
 		// Item list is not null, so that can add a new item
 		assertNotNull("Test if there is valid Camcorder arraylist to add to", camcorderList);
 		
@@ -49,7 +49,7 @@ public class ResourceCentreTest {
 		assertEquals("Test that Camcorder arraylist size is 2?", 2, camcorderList.size());
 	}
 	@Test
-	public void testAddChromebook() {
+	public void testAddChromebook() { // Assigned to: Yolanda
 		//fail("Not yet implemented");
 		// write your code here
 		// Item list is not null, so that can add a new item
@@ -68,7 +68,7 @@ public class ResourceCentreTest {
 	}
 	
 	@Test
-	public void testRetrieveAllCamcorder() {
+	public void testRetrieveAllCamcorder() { // Assigned to: Tristen
 		// Test if Item list is not null but empty, so that can add a new item
 		assertNotNull("Test if there is valid Camcorder arraylist to add to", camcorderList);
 		
@@ -92,7 +92,7 @@ public class ResourceCentreTest {
 		
 	}
 	@Test
-	public void testRetrieveAllChromebook() {
+	public void testRetrieveAllChromebook() { // Assigned to: Tristen
 		//fail("Not yet implemented");
 		// write your code here
 		// Test if Item list is not null but empty, so that can add a new item
@@ -118,7 +118,7 @@ public class ResourceCentreTest {
 	}
 
 	@Test
-	public void testDoLoanCamcorder() {
+	public void testDoLoanCamcorder() { // Assigned to: Haris
 		//fail("Not yet implemented");
 		// write your code here
 		//Test newly added camcorder loan
@@ -135,7 +135,7 @@ public class ResourceCentreTest {
 	}
 	
 	@Test
-	public void testDoLoanChromebook() {
+	public void testDoLoanChromebook() { // Assigned to: Haris
 		//fail("Not yet implemented");
 		// write your code here
 		//Test newly added chromobook loan
@@ -149,7 +149,7 @@ public class ResourceCentreTest {
 	}
 	
 	@Test
-	public void testDoReturnCamcorder() {
+	public void testDoReturnCamcorder() { // Assigned to: Rui Xiang
 		//fail("Not yet implemented");
 		// write your code here
 		//Test newly added camcorder return
@@ -165,7 +165,7 @@ public class ResourceCentreTest {
 		
 	}
 	@Test
-	public void testDoReturnChromebook() {
+	public void testDoReturnChromebook() { // Assigned to: Rui Xiang
 		//fail("Not yet implemented");
 		// write your code here
 		//Test newly added chromobook return
