@@ -145,7 +145,7 @@ public class ResourceCentreTest {
 		//Test if loaned chromobook can be loan
 		ResourceCentre.doLoanChromebook(chromebookList,"CB0011", "7-7-2021");
 		boolean test2 = ResourceCentre.doLoanChromebook(chromebookList,"CB0011", "7-7-2021");
-		assertFalse("Test newly added chromebook can be loaned", test2);
+		assertFalse("Test loaned chromebook can be loaned", test2);
 	}
 	
 	@Test
@@ -168,14 +168,16 @@ public class ResourceCentreTest {
 	public void testDoReturnChromebook() { // Assigned to: Rui Xiang
 		//fail("Not yet implemented");
 		// write your code here
+		
 		//Test newly added chromobook return
 		ResourceCentre.addChromebook(chromebookList, cb1);
 		boolean test = ResourceCentre.doReturnChromebook(chromebookList,"CB0011");
-		assertFalse("Test newly added chromebook can be loaned", test);
+		assertFalse("Test newly added chromebook can be return", test);
+		
 		//Test if loaned chromobook can be return
 		ResourceCentre.doLoanChromebook(chromebookList,"CB0011", "7-7-2021");
 		boolean test2 = ResourceCentre.doReturnChromebook(chromebookList,"CB0011");
-		assertTrue("Test newly added chromebook can be loaned", test2);
+		assertTrue("Test loaned chromebook can be return", test2);
 		//TestComment
 	}
 	
