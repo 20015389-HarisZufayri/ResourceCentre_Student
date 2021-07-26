@@ -48,6 +48,7 @@ public class ResourceCentreTest {
 		ResourceCentre.addCamcorder(camcorderList, cc2);
 		assertEquals("Test that Camcorder arraylist size is 2?", 2, camcorderList.size());
 	}
+	
 	@Test
 	public void testAddChromebook() { // Assigned to: Yolanda
 		// write your code here
@@ -90,6 +91,7 @@ public class ResourceCentreTest {
 		assertEquals("Check that ViewAllCamcorderlist", testOutput, allCamcorder);
 		
 	}
+	
 	@Test
 	public void testRetrieveAllChromebook() { // Assigned to: Tristen
 		// Test if Item list is not null but empty, so that can retrieve Chromebook
@@ -168,6 +170,7 @@ public class ResourceCentreTest {
 		
 		
 	}
+	
 	@Test
 	public void testDoReturnChromebook() { // Assigned to: Rui Xiang
 		// write your code here
