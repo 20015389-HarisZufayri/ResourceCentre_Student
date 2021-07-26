@@ -168,7 +168,6 @@ public class ResourceCentreTest {
 		boolean test3 = ResourceCentre.doReturnCamcorder(camcorderList,"CC0013");
 		assertFalse("Test invalid camcorder can be return", test3);
 		
-		
 	}
 	
 	@Test
