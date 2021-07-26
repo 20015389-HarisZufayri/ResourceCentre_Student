@@ -252,6 +252,7 @@ public class ResourceCentre {
 		}
 		return isLoaned;
 	}
+	//Test Comment v1
 	public static void loanChromebook(ArrayList<Chromebook> chromebookList) {
 		// write your code here
 		ResourceCentre.viewAllChromebook(chromebookList);
