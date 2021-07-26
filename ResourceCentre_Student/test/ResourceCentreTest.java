@@ -117,7 +117,7 @@ public class ResourceCentreTest {
 	@Test
 	public void testDoLoanCamcorder() { // Assigned to: Haris
 		// Test if Item list is not null but empty, so that can loan Camcorder
-		assertNotNull("Test if there is valid Camcorder arraylist to add to", camcorderList);
+		assertNotNull("Test if there is valid Camcorder arraylist to loan item", camcorderList);
 		
 		//Test newly added camcorder loan
 		ResourceCentre.addCamcorder(camcorderList, cc1);
@@ -134,7 +134,9 @@ public class ResourceCentreTest {
 	
 	@Test
 	public void testDoLoanChromebook() { // Assigned to: Haris
-		// write your code here
+		// Test if Item list is not null but empty, so that can loan Chromebook
+		assertNotNull("Test if there is valid Chromebook arraylist to loan item", chromebookList);
+		
 		//Test newly added chromobook loan
 		ResourceCentre.addChromebook(chromebookList, cb1);
 		boolean test = ResourceCentre.doLoanChromebook(chromebookList,"CB0011", "7-7-2021");
@@ -160,12 +162,17 @@ public class ResourceCentreTest {
 		boolean test2 = ResourceCentre.doReturnCamcorder(camcorderList,"CC0011");
 		assertTrue("Test already loan camcorder to be loan again", test2);
 		
+		//Test if invalid camcorder item can be returned
+		boolean test3 = ResourceCentre.doReturnCamcorder(camcorderList,"CC0013");
+		assertFalse("Test invalid camcorder can be return", test3);
+		
 		
 	}
 	@Test
 	public void testDoReturnChromebook() { // Assigned to: Rui Xiang
-		//fail("Not yet implemented");
 		// write your code here
+		// Test if Item list is not null but empty, so that can loan Chromebook
+		assertNotNull("Test if there is valid Chromebook arraylist to loan item", chromebookList);
 		
 		//Test newly added chromobook return
 		ResourceCentre.addChromebook(chromebookList, cb1);
@@ -176,6 +183,10 @@ public class ResourceCentreTest {
 		ResourceCentre.doLoanChromebook(chromebookList,"CB0011", "7-7-2021");
 		boolean test2 = ResourceCentre.doReturnChromebook(chromebookList,"CB0011");
 		assertTrue("Test loaned chromebook can be return", test2);
+		
+		//Test if invalid chromebook item can be returned
+		boolean test3 = ResourceCentre.doReturnChromebook(chromebookList,"CB0013");
+		assertFalse("Test invalid chromebook can be return", test3);
 	}
 	
 	@After
